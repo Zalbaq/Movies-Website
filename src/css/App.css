@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --primary: #222831;
+    --secondary:#393E46;
+    --third:#00ADB5;
+    --fourth:#00FFF5;
+    --text:#fefefe;
+}
+
+html{
+  font-size: 10px;
+}
+section{
+  background-color: var(--primary);
+}
+::-webkit-scrollbar{
+  display: none;
+}
