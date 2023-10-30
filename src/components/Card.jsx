@@ -1,5 +1,4 @@
 import "../css/tailwind.css";
-import "../css/Card.css";
 
 const Card = ({ title, imgUrl }) => {
   return (
