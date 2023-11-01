@@ -1,15 +1,14 @@
 import styled from "styled-components";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-const ListMenu = () => {
+const ListMenu = ({ className }) => {
   return (
     <>
-      <ul className="flex">
+      <ul className={className}>
         <ListItem>
-          <a href="">Popular</a>
+          <a href="/">Popular</a>
         </ListItem>
         <ListItem>
-          <a href="">Top Rated</a>
+          <a href="/tv">Top Rated</a>
         </ListItem>
         <ListItem>
           <a href="">Rated Movies</a>
