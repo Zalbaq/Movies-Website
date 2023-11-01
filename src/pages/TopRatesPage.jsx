@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Card from "../components/Card";
 import { useLocation } from "react-router-dom";
 
-const TvPage = ({ movieTitle }) => {
+const TopRatesPage = ({ movieTitle }) => {
   const [tv, setTv] = useState([]);
   const location = useLocation();
 
@@ -35,4 +35,4 @@ const Section = styled.section`
   background: #222831;
 `;
 
-export default TvPage;
+export default TopRatesPage;
