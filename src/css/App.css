@@ -12,8 +12,6 @@
 
 html{
   font-size: 10px;
-}
-section{
   background-color: var(--primary);
 }
 ::-webkit-scrollbar{
