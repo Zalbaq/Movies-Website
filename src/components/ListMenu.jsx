@@ -5,16 +5,16 @@ const ListMenu = ({ className }) => {
     <>
       <ul className={className}>
         <ListItem>
-          <a href="/">Popular</a>
+          <A href="/">Popular</A>
         </ListItem>
         <ListItem>
-          <a href="/tv">Top Rated</a>
+          <A href="/tv">Top Rated</A>
         </ListItem>
         <ListItem>
-          <a href="">Rated Movies</a>
+          <A href="">Rated Movies</A>
         </ListItem>
         <ListItem>
-          <a href="">TV Movies</a>
+          <A href="">TV Movies</A>
         </ListItem>
       </ul>
     </>
@@ -23,6 +23,22 @@ const ListMenu = ({ className }) => {
 
 const ListItem = styled.li`
   margin-right: 2rem;
-  font-size: 1.4rem;
 `;
+
+const A = styled.a`
+  position: relative;
+  &::before {
+    content: " ";
+    width: 0;
+    height: 3px;
+    background: white;
+    position: absolute;
+    bottom: -1rem;
+    transition: all ease-in-out 0.25s;
+  }
+  &:hover::before {
+    width: 100%;
+  }
+`;
+
 export default ListMenu;
