@@ -1,0 +1,8 @@
+.sidebar {
+    transition: all ease-in-out .25s;
+    background: rgba(57, 62, 70, 0.25);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border-radius: 0 10px 10px 0;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
