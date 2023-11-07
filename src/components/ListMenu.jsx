@@ -8,7 +8,7 @@ const ListMenu = ({ className }) => {
           <A href="/">Popular</A>
         </ListItem>
         <ListItem>
-          <A href="/tv">Top Rated</A>
+          <A href="/topRated">Top Rated</A>
         </ListItem>
         <ListItem>
           <A href="">Rated Movies</A>

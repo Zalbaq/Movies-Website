@@ -1,9 +1,18 @@
 import "../css/tailwind.css";
 
 const Card = ({ title, imgUrl }) => {
+  const divClass = [
+    "card",
+    "basis-[20rem]",
+    "relative",
+    "h-[30rem]",
+    "w-[15rem]",
+    "p-5",
+    "mb-10",
+  ];
   return (
     <>
-      <div className="card basis-[20rem] relative h-[30rem] w-[15rem] p-5 mb-10">
+      <div className={divClass.join(" ")}>
         <img
           className=" rounded-2xl object-contain"
           src={`https://image.tmdb.org/t/p/w300${imgUrl}`}
