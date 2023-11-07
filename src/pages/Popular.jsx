@@ -9,7 +9,7 @@ const Popular = ({ movieTitle }) => {
   const location = useLocation();
 
   useEffect(() => {
-    if (movieTitle.length < 4 && location.pathname === '/') {
+    if (movieTitle.length < 4 && location.pathname === "/") {
       getMovies().then((result) => {
         sethMovie(result);
       });

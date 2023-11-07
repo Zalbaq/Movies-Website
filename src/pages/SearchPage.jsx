@@ -12,9 +12,20 @@ const SearchPage = ({ movieTitle }) => {
     });
   }, [movieTitle]);
 
+  const sectionClass = [
+    "relative",
+    "flex",
+    "flex-wrap",
+    "justify-center",
+    "items-center",
+    "gap-1",
+    "py-[2rem]",
+    "px-[3rem]",
+  ];
+
   return (
     <>
-      <Section className="relative flex flex-wrap justify-center items-center gap-1 py-[2rem] px-[3rem]">
+      <Section className={sectionClass.join(" ")}>
         {searchMovie.map((movie, i) => (
           <Card
             key={i}
